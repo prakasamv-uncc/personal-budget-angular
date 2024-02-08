@@ -1,0 +1,32 @@
+a {
+  display: block;
+  padding: 0 20px;
+  line-height: 44px;
+  font-size: 1.4em;
+  text-decoration: none;
+  margin: 0;
+}
+
+
+main {
+  padding: 40px;
+  width: 100%;
+}
+
+footer {
+  height: 50px;
+  background-color: #b4c6f0;
+  padding: 40px;
+}
+
+.skip {
+  display: block;
+  line-height: 44px;
+  padding: 0 20px;
+  margin-top: -44px;
+}
+
+.skip:focus {
+  margin-top: 0;
+}
+

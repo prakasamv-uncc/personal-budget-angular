@@ -1,0 +1,20 @@
+<h2>Budget Overview</h2>
+<div class="container-fluid">
+  <div class="col-md-12 col-lg-6">
+    <p-table [value]="budgetDataArray" styleClass="'p-datatable-gridlines'" [tableStyle]="{ 'min-width': '30rem' }">
+      <ng-template pTemplate="header">
+          <tr>
+              <th>Title</th>
+              <th>Budget</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-budgetData>
+          <tr>
+              <td>{{ budgetData.title }}</td>
+              <td>{{ budgetData.budget }}</td>
+          </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  </div>
+

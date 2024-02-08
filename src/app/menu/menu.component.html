@@ -1,0 +1,36 @@
+ <!--Semantic HTML TAG :Added NAV tag as part of semantic html tag -->
+
+<!-- <nav class="navbar" aria-label="navigation">
+  <div class="navbar-logo">
+
+  </div>
+  <ul class="navbar-links collapse navbar-collapse">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+<li><a routerLink="/login">Login</a></li>
+  </ul>
+  <div class="navbar-actions">
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="navbar-logo">
+      <a class="nav-link active" routerLink="/">
+        <img src="../../assets/logo.jpg" alt="Personal Budget" />
+      </a>
+
+    </div>
+
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+      <!-- ml-auto still works just fine-->
+      <div class="navbar-nav ml-auto">
+        <ul class="navbar-links" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+          <li><a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" aria-current="page" routerLink="/">Home</a></li>
+          <li><a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/contact">Contact</a></li>
+          <li><a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/about">About</a></li>
+          <li><a class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}"  routerLink="/login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
